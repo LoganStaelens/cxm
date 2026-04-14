@@ -1,0 +1,16 @@
+[project]
+name = "cxm"
+version = "0.1.0"
+description = "CPP build tools for modules"
+authors = [{name="Logan Staelens"}]
+dependencies = []
+
+[project.scripts]
+cxm = "cxm.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
